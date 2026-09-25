@@ -188,25 +188,20 @@
         <h2 class="font-headline text-5xl md:text-6xl font-black tracking-tighter text-on-surface">OUR <span
             class="text-tertiary italic">GALLERY</span></h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      <div class="flex flex-wrap justify-center gap-8 lg:gap-12">
         <div onclick="openLightbox(0)"
-          class="aspect-square md:aspect-[4/3] overflow-hidden rounded-2xl bg-surface-container-highest group shadow-lg border border-outline-variant/10 cursor-pointer">
+          class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] aspect-square md:aspect-[4/3] overflow-hidden rounded-2xl bg-surface-container-highest group shadow-lg border border-outline-variant/10 cursor-pointer">
           <img src="assets/image/g1.jpeg" alt="Gallery image 1"
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
         </div>
         <div onclick="openLightbox(1)"
-          class="aspect-square md:aspect-[4/3] overflow-hidden rounded-2xl bg-surface-container-highest group shadow-lg border border-outline-variant/10 md:translate-y-8 cursor-pointer">
+          class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] aspect-square md:aspect-[4/3] overflow-hidden rounded-2xl bg-surface-container-highest group shadow-lg border border-outline-variant/10 cursor-pointer">
           <img src="assets/image/g2.jpeg" alt="Gallery image 2"
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
         </div>
         <div onclick="openLightbox(2)"
-          class="aspect-square md:aspect-[4/3] overflow-hidden rounded-2xl bg-surface-container-highest group shadow-lg border border-outline-variant/10 cursor-pointer">
+          class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] aspect-square md:aspect-[4/3] overflow-hidden rounded-2xl bg-surface-container-highest group shadow-lg border border-outline-variant/10 cursor-pointer">
           <img src="assets/image/g3.jpeg" alt="Gallery image 3"
-            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-        </div>
-        <div onclick="openLightbox(3)"
-          class="aspect-square md:aspect-[4/3] overflow-hidden rounded-2xl bg-surface-container-highest group shadow-lg border border-outline-variant/10 md:translate-y-8 cursor-pointer">
-          <img src="assets/image/g4.jpeg" alt="Gallery image 4"
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
         </div>
       </div>
@@ -305,8 +300,7 @@
     const galleryImages = [
       'assets/image/g1.jpeg',
       'assets/image/g2.jpeg',
-      'assets/image/g3.jpeg',
-      'assets/image/g4.jpeg'
+      'assets/image/g3.jpeg'
     ];
     let currentImageIndex = 0;
 
